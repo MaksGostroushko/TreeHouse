@@ -28,3 +28,13 @@ while  answer != "n"
 end
 
 puts "---"
+
+contact_list.each do |contact|
+  puts "Name: #{contact["name"]}"
+  if contact["phone_numbers"].size > 0
+    contact["phone_numbers"].each do |phone_number|
+      puts "Phone: #{phone_number}"
+    end
+  end
+  puts "-----\n"
+end
